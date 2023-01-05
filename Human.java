@@ -7,12 +7,15 @@ public class Human {
     private String name;
     private int age;
     private Human father;
+    private Human mather;
     private List<Human> childrenList;
     
-    public Human(String name, int age, Human father) {
+    public Human(String name, int age, Human father, Human mather) {
         this.name = name;
         this.age = age;
         this.father = father;
+        this.mather = mather;
+        mather.childrenList.add(this);
         father.childrenList.add(this);
     }
     
@@ -26,6 +29,10 @@ public class Human {
 
     public Human getFather(){
         return father;
+    }
+
+    public Human getMather(){
+        return mather;
     }
     
     @Override
