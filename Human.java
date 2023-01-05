@@ -1,5 +1,6 @@
 package FamilyTree;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Human {
@@ -8,17 +9,20 @@ public class Human {
     private int age;
     private Human father;
     private Human mather;
-    private List<Human> childrenList;
+    private List<Human> childrenList = new ArrayList<>();
     
-    public Human(String name, int age, Human father, Human mather) {
+    public Human(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public Human(Human father, Human mather){
         this.father = father;
         this.mather = mather;
         mather.childrenList.add(this);
         father.childrenList.add(this);
     }
-    
+
     public String getName() {
         return name;
     }
