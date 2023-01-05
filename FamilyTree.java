@@ -31,6 +31,7 @@ public class FamilyTree {
         personList.add(person);
     }
 
+
     public List<Human> getFamily(String name){
         List<Human> res = new ArrayList<>();
         for (Human person: personList){
