@@ -43,13 +43,7 @@ public class FamilyTree {
 
     // //*Для сохранения новых данных в лист */
     // public void addPerson(Human person){
-    //     personList.add(person);
-    // }
-
-
-    // public List<Human> getFamily(String name){
-    //     List<Human> res = new ArrayList<>();
-    //     for (Human person: personList){
+    //   
 
 }
 
