@@ -7,7 +7,7 @@ public class Main {
         Human person2 = new Human("Лошакова Рита Алексеевна", 57);
         Human person3 = new Human("Берестов Станислав Сергеевич", 40);
         Human person4 = new Human("Берестова Юлия Юрьевна", 37);
-        Human person5 = new Human("Лошакова Лилия Юрьевна", 21);
+        Human person5 = new Human("Лошакова Лилия Юрьевна", 21, "Юра");
         Human person6 = new Human("Берестов Виталий Станиславович", 12);
 
         family.addPerson(person1);
