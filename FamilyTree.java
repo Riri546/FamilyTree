@@ -5,18 +5,26 @@ import java.util.List;
 
 public class FamilyTree {
     
-    private List<Human> person;
+    private List<Human> personList;
     
-    public FamilyTree(List<Human> person) {
-       this.person = person;
+    public FamilyTree(List<Human> personList) {
+       this.personList = personList;
     }
     
     public FamilyTree() {
         this(new ArrayList<>());
     }
     
-    public List<Human> getPerson() {
-        return person;
+    public List<Human> getPersonList() {
+        return personList;
+    }
+
+    public void setProductList(List<Human> personList) {
+        this.personList = personList;
+    }
+
+    public void addPerson(Human person){
+        personList.add(person);
     }
 }
 
