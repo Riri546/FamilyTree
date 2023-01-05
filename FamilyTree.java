@@ -26,6 +26,16 @@ public class FamilyTree {
     public void addPerson(Human person){
         personList.add(person);
     }
+
+    public List<Human> getFamily(int age){
+        List<Human> res = new ArrayList<>();
+        for (Human person: personList){
+            if (person.getAge() <= age){
+                res.add(person);
+            }
+        }
+        return res;
+    }
 }
 
 

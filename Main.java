@@ -10,19 +10,14 @@ public class Main {
         Human person5 = new Human("Лошакова Лилия Юрьевна", 21);
         Human person6 = new Human("Берестов Виталий Станиславович", 12);
 
-
-  
         family.addPerson(person1);
         family.addPerson(person2);
         family.addPerson(person3);
         family.addPerson(person4);
         family.addPerson(person5);
         family.addPerson(person6);
-    
 
-
-        
-        // System.out.println(family.getProductByCost(100));
+        System.out.println(family.getFamily(50));
     }
 }
 

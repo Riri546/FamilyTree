@@ -14,14 +14,13 @@ package FamilyTree;
             return name;
         }
     
-        public double getCost() {
+        public double getAge() {
             return age;
         }
     
-    
         @Override
         public String toString() {
-            return name + " : " + age + " ";
+            return name + ": " + age + " ";
         }
     }
 
