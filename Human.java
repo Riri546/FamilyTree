@@ -7,9 +7,6 @@ public class Human {
     private String name;
     private int age;
     private ArrayList<Communications> family = new ArrayList<Communications>();
-    // private Human father;
-    // private Human mather;
-    // private List<Human> childrenList;
 
     public Human(String name) {
         this.name = name;
@@ -41,12 +38,6 @@ public class Human {
     public void addCommunications(Human h2, int st1, int st2) {
         this.family.add(new Communications(this, h2, 1, 2));
     }
-    // public Human(Human father, Human mather){
-    // this.father = father;
-    // this.mather = mather;
-    // mather.childrenList.add(this);
-    // father.childrenList.add(this);
-    // }
 
     public String getName() {
         return name;
@@ -59,16 +50,4 @@ public class Human {
     public ArrayList<Communications> getFamily() {
         return family;
     }
-    // public Human getFather(){
-    // return father;
-    // }
-
-    // public Human getMather(){
-    // return mather;
-    // }
-
-    // @Override
-    // public String toString() {
-    // return name + ": " + age + " " + father + " " + mather + " ";
-    // }
 }
