@@ -1,7 +1,6 @@
 package FamilyTree;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Human {
 
@@ -29,17 +28,17 @@ public class Human {
 
     public void printRelatives(int st) {
         ArrayList<Communications> tList = this.getFamily();
-        System.out.println("родственники степени: " + st + "для " + this.name + ": ");
+        System.out.println("родственники степени: " + st + ", для " + this.name + ": ");
         for (int i = 0; i < tList.size(); i++) {
-            if (tList.get(i).h2 != this && tList.get(i).degreeKinship2 == st) {
-                System.out.println("Имя: " + tList.get.h2.name + ", ");
-                System.out.println("Возрваст: " + tList.get.h2.age + ", ");
-                System.out.println("Степень родства: " + tList.get.degreeKinship2 + ". ");
+            if (tList.get(i).getH2() != this && tList.get(i).getDegreeKinship2() == st) {
+                System.out.println("Имя: " + tList.get(i).getH2().name + ", ");
+                System.out.println("Возрваст: " + tList.get(i).getH2().age + ", ");
+                System.out.println("Степень родства: " + tList.get(i).getDegreeKinship2() + ".");
             }
         }
     }
 
-    public void addCommunications(Human h2, int st1, int st2){
+    public void addCommunications(Human h2, int st1, int st2) {
         this.family.add(new Communications(this, h2, 1, 2));
     }
     // public Human(Human father, Human mather){
@@ -70,6 +69,6 @@ public class Human {
 
     // @Override
     // public String toString() {
-    //     return name + ": " + age + " " + father + " " + mather + " ";
+    // return name + ": " + age + " " + father + " " + mather + " ";
     // }
 }

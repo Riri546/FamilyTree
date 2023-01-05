@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class FamilyTree {
 
-    private ArrayList<Human> treeHuman = new ArrayList<Human>();
+    ArrayList<Human> treeHuman = new ArrayList<Human>();
 
     public void preOrder(Human tree, String spase){
         if(tree != null)
