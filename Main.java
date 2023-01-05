@@ -18,7 +18,7 @@ public class Main {
         family.addPerson(person5);
         family.addPerson(person6);
 
-        // System.out.println(family.getFamily(50));
+        System.out.println(family.getFamily("Юлия"));
     }
 }
 

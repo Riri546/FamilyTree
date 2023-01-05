@@ -31,15 +31,15 @@ public class FamilyTree {
         personList.add(person);
     }
 
-    // public List<Human> getFamily(int age){
-    //     List<Human> res = new ArrayList<>();
-    //     for (Human person: personList){
-    //         if (person.getAge() <= age){
-    //             res.add(person);
-    //         }
-    //     }
-    //     return res;
-    // }
+    public List<Human> getFamily(String name){
+        List<Human> res = new ArrayList<>();
+        for (Human person: personList){
+            if (person.getName() == name){
+                res.add(person);
+            }
+        }
+        return res;
+    }
 }
 
 
