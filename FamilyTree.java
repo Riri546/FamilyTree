@@ -17,18 +17,7 @@ public class FamilyTree {
         for(int i = 0; i < tree.getFamily().size(); i++){
             preOrder(tree.getFamily().get(i).getH2(), spase + "");
         }
-
-        // for(int i = 0; i < tree.family.size(); i++){
-        //     preOrder(tree.family.get(i).getH2(), spase + " ");
-        // }
     }
-    
-    // public FamilyTree(List<Human> personList) {
-    //    this.personList = personList;
-    // }
-    
-
-
 }
 
 
