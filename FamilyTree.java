@@ -50,12 +50,7 @@ public class FamilyTree {
     // public List<Human> getFamily(String name){
     //     List<Human> res = new ArrayList<>();
     //     for (Human person: personList){
-    //         if (person.getName() == name){
-    //             res.add(person);
-    //         }
-    //     }
-    //     return res;
-    // }
+
 }
 
 
