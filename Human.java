@@ -1,20 +1,28 @@
 package FamilyTree;
 
-import java.util.List;
+    public class Human {
 
-public class Human {
-    String name;
-    Human father;
-    Human mather;
-    Human Grandma;
-    Human Grandpa;
-    List<Human> children;
-
-    public Human(String name, Human father){
-        this.name = name;
-        this.father = father;
-        father.children.add(this);
-
+        private String name;
+        private int age;
+    
+        public Human(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+    
+        public String getName() {
+            return name;
+        }
+    
+        public double getCost() {
+            return age;
+        }
+    
+    
+        @Override
+        public String toString() {
+            return name + " : " + age + " ";
+        }
     }
 
-}
+  
