@@ -3,7 +3,7 @@ package FamilyTree;
 public class Main {
     public static void main(String[] args) {
         FamilyTree family = new FamilyTree();
-        Human person0 = null;
+        // String person0 = ;
         Human person1 = new Human("Юрий", 59, person0, person0);
         Human person2 = new Human("Рита", 57, person0, person0);
         Human person3 = new Human("Станислав", 40, person0, person0);
