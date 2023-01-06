@@ -1,6 +1,6 @@
 package FamilyTree;
 
-public abstract class Communications {
+public class Communications {
 
     private Human h1;
     private Human h2;
