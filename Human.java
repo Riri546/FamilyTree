@@ -25,7 +25,7 @@ public class Human {
 
     public void printRelatives(String st) {
         ArrayList<Communications> tList = this.getFamily();
-        System.out.println("родственники степени: " + st + ", для " + this.name + ": ");
+        System.out.println("Родственники степени: " + st + ", для " + this.name + ": ");
         for (int i = 0; i < tList.size(); i++) {
             if (tList.get(i).getH2() != this && tList.get(i).getDegreeKinship2() == st) {
                 System.out.println("Имя: " + tList.get(i).getH2().name + ", ");
