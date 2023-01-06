@@ -7,19 +7,18 @@ public class Recorded implements Serializable {
     private int age;
     private String contact;
 
-    public Recorded(String name,int age, String contact) {
+    public Recorded(String name, int age, String contact) {
         this.name = name;
         this.age = age;
         this.contact = contact;
-        
     }
 
     @Override
     public String toString() {
-        return "Logon{" +
-                "name ='" + name + '\'' +
-                ", age ='" + age + '\'' +
-                ", contact ='" + contact + '\'' +
+        return "Древо{" +
+                "Имя ='" + name + '\'' +
+                ", Возрост ='" + age + '\'' +
+                ", Кем является ='" + contact + '\'' +
                 '}';
     }
 
@@ -31,18 +30,5 @@ public class Recorded implements Serializable {
         System.out.println(h1);
         System.out.println(h2);
         System.out.println(h3);
-
-        ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("Externals.out"));
-        out.writeObject(h1);
-        out.writeObject(h2);
-        out.writeObject(h3);
-        out.close();
-
-        ObjectInputStream in = new ObjectInputStream(new FileInputStream("Externals.out"));
-        igor = (Recorded) in.readObject();
-        renat = (Recorded) in.readObject();
-
-        System.out.println("After: \n" + igor);
-        System.out.println(renat);
     }
 }
