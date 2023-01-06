@@ -10,8 +10,8 @@ public class Main {
         tree.treeHuman.add(h2);
         Human h3 = new Human("Витя", 65);
         tree.treeHuman.add(h3);
-   
-        h1.addCommunications(h2, "Дети",  "Родители");
+
+        h1.addCommunications(h2, "Дети", "Родители");
         h1.addCommunications(h3, "Дети", "Родители");
 
         h1.printRelatives("Родители");

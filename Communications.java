@@ -7,7 +7,6 @@ public class Communications {
     private String degreeKinship1 = "Дети";
     private String degreeKinship2 = "Родители";
 
- 
     public Communications(Human h1, Human h2, String degreeKinship1, String degreeKinship2) {
         this.h1 = h1;
         this.h2 = h2;
@@ -18,7 +17,7 @@ public class Communications {
     public Human getH1() {
         return h1;
     }
-     
+
     public Human getH2() {
         return h2;
     }
