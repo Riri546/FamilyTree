@@ -1,8 +1,5 @@
 package FamilyTree;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public abstract class Communications {
 
     private Human h1;
@@ -12,6 +9,14 @@ public abstract class Communications {
     
     private String degreeKinship1 = "Дети";
     private String degreeKinship2 = "Родители";
+
+ 
+    public Communications(Human h1, Human h2, String degreeKinship1, String degreeKinship2) {
+        this.h1 = h1;
+        this.h2 = h2;
+        this.degreeKinship1 = degreeKinship1;
+        this.degreeKinship2 = degreeKinship2;
+    }
 
     public Human getH1() {
         return h1;
@@ -25,22 +30,7 @@ public abstract class Communications {
         return degreeKinship1;
     }
 
-    public void setDegreeKinship1(String degreeKinship1) {
-        this.degreeKinship1 = degreeKinship1;
-    }
-
-
     public String getDegreeKinship2() {
         return degreeKinship2;
     }
-    
-    public abstract void contact(){
-        return;
-    }
-    // public Communications(Human h1, Human h2, ) {
-    //     this.h1 = h1;
-    //     this.h2 = h2;
-    //     this.degreeKinship1 = degreeKinship1;
-    //     this.degreeKinship2 = degreeKinship2;
-    // }
 }

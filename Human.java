@@ -23,7 +23,7 @@ public class Human {
         this.family = family;
     }
 
-    public void printRelatives(int st) {
+    public void printRelatives(String st) {
         ArrayList<Communications> tList = this.getFamily();
         System.out.println("родственники степени: " + st + ", для " + this.name + ": ");
         for (int i = 0; i < tList.size(); i++) {
@@ -35,8 +35,8 @@ public class Human {
         }
     }
 
-    public void addCommunications(Human h2, int st1, int st2) {
-        this.family.add(new Communications(this, h2, 1, 2));
+    public void addCommunications(Human h2, String st1, String st2) {
+        this.family.add(new Communications(this, h2, "Дети", "Родители"));
     }
 
     public String getName() {

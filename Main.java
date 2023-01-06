@@ -11,10 +11,10 @@ public class Main {
         Human h3 = new Human("Витя", 4);
         tree.treeHuman.add(h3);
 
-        h1.addCommunications(h2, 1, 2);
-        h1.addCommunications(h3, 1, 2);
+        h1.addCommunications(h2, "Дети",  "Родители");
+        h1.addCommunications(h3, "Дети", "Родители");
 
-        h1.printRelatives(2);
+        h1.printRelatives("Родители");
 
         tree.preOrder(h1, "");
     }
