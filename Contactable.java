@@ -1,5 +1,6 @@
 package FamilyTree;
 
-public class Contactable {
+public interface Contactable {
+    void contact();
     
 }
