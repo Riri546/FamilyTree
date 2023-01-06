@@ -1,5 +1,7 @@
 package FamilyTree;
 
-public class Recordable {
-    
+public interface Recordable {
+    void save();
+
+    Object read();
 }
