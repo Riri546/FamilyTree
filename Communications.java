@@ -4,9 +4,6 @@ public class Communications {
 
     private Human h1;
     private Human h2;
-    // private int degreeKinship1;
-    // private int degreeKinship2;
-    
     private String degreeKinship1 = "Дети";
     private String degreeKinship2 = "Родители";
 
