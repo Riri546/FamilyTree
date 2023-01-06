@@ -2,7 +2,7 @@ package FamilyTree;
 
 import java.util.ArrayList;
 
-public class Human {
+public class Human extends FamilyTree {
 
     private String name;
     private int age;
