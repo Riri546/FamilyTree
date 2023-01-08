@@ -11,6 +11,7 @@ public class Main {
         Human h3 = new Human("Витя", 65);
         tree.treeHuman.add(h3);
 
+        
         h1.addCommunications(h2, "Дети", "Родители");
         h1.addCommunications(h3, "Дети", "Родители");
 
