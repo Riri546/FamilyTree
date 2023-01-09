@@ -18,6 +18,11 @@ public class Human {
         this.mather = mather;
     }
 
+    public Human(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+
     // private ArrayList<Communications> family = new ArrayList<Communications>();
 
     // public Human(String name) {
