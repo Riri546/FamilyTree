@@ -19,7 +19,7 @@ public class Service {
         Collections.sort(tree.getTreeHuman());
     }
 
-    public void sortById() {
+    public void sortByAge() {
     Collections.sort(tree.getTreeHuman(), new HumanComparatorByAge());
     }
 }

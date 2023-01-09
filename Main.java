@@ -30,5 +30,13 @@ public class Main {
         for (Human human : tree) {
             System.out.println(human);
         }
+
+        System.out.println();
+        System.out.println("После сортировки по возрасту: ");
+        service.sortByAge();
+
+        for (Human human : tree) {
+            System.out.println(human);
+        }
     }
 }
