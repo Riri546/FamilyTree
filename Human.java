@@ -73,7 +73,7 @@ public class Human implements Comparable<Human> {
         this.name = name;
     }
 
-    public double getAge() {
+    public int getAge() {
         return age;
     }
 

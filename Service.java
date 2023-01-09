@@ -19,7 +19,7 @@ public class Service {
         Collections.sort(tree.getTreeHuman());
     }
 
-    // public void sortById() {
-    // Collections.sort(group.getStudentList(), new StudentComparatorById());
-    // }
+    public void sortById() {
+    Collections.sort(group.getStudentList(), new StudentComparatorById());
+    }
 }
