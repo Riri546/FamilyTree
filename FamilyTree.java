@@ -8,27 +8,24 @@ public class FamilyTree implements Iterable<Human> {
     private ArrayList<Human> treeHuman;
 
     public FamilyTree(){
-
+        treeHuman = new ArrayList<>();
     }
 
+    public void addHuman(Human human) {
+        treeHuman.add(human);
+    }
     
-        public StudyGroup() {
-            studentList = new ArrayList<>();
-        }
+    // @Override
+    // public Iterator<Human> iterator() {
+    //     return new StudyGroupIterator(treeHuman);
+    // }
     
-        public void addStudent(Student student) {
-            studentList.add(student);
-        }
-    
-        @Override
-        public Iterator<Student> iterator() {
-            return new StudyGroupIterator(studentList);
-        }
-    
-        public List<Student> getStudentList() {
-            return studentList;
-        }
+    // public List<Human> getTreeHuman() {
+    //     return treeHuman;
+    // }
 
+
+    
 
     // public void preOrder(Human tree, String spase) {
     //     if (tree != null)
