@@ -15,6 +15,12 @@ public class Main {
         Human h5 = new Human("София", 10, h3, h4);
         tree.addHuman(h5);
 
+        // for (Human human: family) {
+        //     System.out.println(Human);
+        // }
+
+        // System.out.println();
+        
         // Human h1 = new Human("Коля", 24);
         // tree.treeHuman.add(h1);
         // Human h2 = new Human("Даша", 53);

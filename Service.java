@@ -15,9 +15,9 @@ public class Service {
         family.addHuman(human);
     }
 
-    public void sortByName() {
-        Collections.sort(family.getTreeHuman());
-    }
+    // public void sortByName() {
+    //     Collections.sort(family.getTreeHuman());
+    // }
 
     // public void sortById() {
     // Collections.sort(group.getStudentList(), new StudentComparatorById());
