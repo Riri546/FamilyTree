@@ -20,12 +20,12 @@ public class Main {
             System.out.println(human);
         }
 
-        // System.out.println();
-        // service.sortByName();
+        System.out.println();
+        service.sortByName();
 
-        // for (Human human : tree) {
-        //     System.out.println(human);
-        // }
+        for (Human human : tree) {
+            System.out.println(human);
+        }
 
         // System.out.println();
 
