@@ -20,6 +20,6 @@ public class Service {
     }
 
     public void sortById() {
-    Collections.sort(group.getStudentList(), new StudentComparatorById());
+    Collections.sort(tree.getTreeHuman(), new HumanComparatorByAge());
     }
 }
