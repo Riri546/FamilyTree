@@ -1,6 +1,5 @@
 package FamilyTree;
 
-// import java.util.ArrayList;
 import java.util.List;
 
 public class Human implements Comparable<Human> {
@@ -23,6 +22,13 @@ public class Human implements Comparable<Human> {
         this.age = age;
         this.father = father;
         this.mather = mather;
+
+        //Если оставить эту логику, то терминал выдает ошибку при ввыводе. Exception in thread 
+        // "main" java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" 
+        // because "father.children" is null
+        // at FamilyTree.Human.<init>(Human.java:28)
+        // at FamilyTree.Main.main(Main.java:12)
+
         // if (father != null) {
         // father.children.add(this);
         // }
@@ -31,12 +37,26 @@ public class Human implements Comparable<Human> {
         // }
     }
 
+    public Human(String name, int age, Human father, Human mather, Human grandfather, Human grandmather) {
+        this.name = name;
+        this.age = age;
+        this.father = father;
+        this.mather = mather;
+        this.grandfather = grandfather;
+        this.grandmather = grandmather;
+    }
+
     @Override
     public String toString() {
         if (father == null & mather == null) {
             return " " + name + " " + age;
-        } else {
+        } 
+        if(grandfather == null & grandmather == null){
             return " " + name + " " + age + " Отец: " + father + " Мать: " + mather;
+        }
+        else {
+            return " " + name + " " + age + " Отец: " + this.father + " Мать: " + this.mather +
+            " Дедушка: " + grandfather + " Бабушка: " + grandmather;
         }
     }
 
