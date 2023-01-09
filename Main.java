@@ -3,6 +3,7 @@ package FamilyTree;
 public class Main {
     public static void main(String[] args) {
         FamilyTree tree = new FamilyTree();
+        Service service = new Service(tree);
 
         Human h1 = new Human("Мария", 54, null, null);
         tree.addHuman(h1);
@@ -15,12 +16,19 @@ public class Main {
         Human h5 = new Human("София", 10, h3, h4);
         tree.addHuman(h5);
 
-        // for (Human human: family) {
-        //     System.out.println(Human);
-        // }
+        for (Human human : tree) {
+            System.out.println(human);
+        }
+
+        System.out.println();
+        service.sortByName();
+
+        for (Human human : tree) {
+            System.out.println(human);
+        }
 
         // System.out.println();
-        
+
         // Human h1 = new Human("Коля", 24);
         // tree.treeHuman.add(h1);
         // Human h2 = new Human("Даша", 53);
@@ -28,7 +36,6 @@ public class Main {
         // Human h3 = new Human("Витя", 65);
         // tree.treeHuman.add(h3);
 
-        
         // h1.addCommunications(h2, "Дети", "Родители");
         // h1.addCommunications(h3, "Дети", "Родители");
 

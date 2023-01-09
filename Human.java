@@ -16,11 +16,18 @@ public class Human {
         this.age = age;
         this.father = father;
         this.mather = mather;
+        father.children.add(this);
     }
 
     public Human(String name, int age){
         this.name = name;
         this.age = age;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Имя: " + name + " Возрост: " + age + " Отец: " + father + " Мать: " + mather;
     }
 
     // private ArrayList<Communications> family = new ArrayList<Communications>();
