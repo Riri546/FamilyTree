@@ -17,10 +17,10 @@ public class FamilyTree implements Iterable<Human> {
 
     @Override
     public Iterator<Human> iterator() {
-    return new FamilyTreeIterator(treeHuman);
+        return new FamilyTreeIterator(treeHuman);
     }
 
     public List<Human> getTreeHuman() {
-    return treeHuman;
+        return treeHuman;
     }
 }
