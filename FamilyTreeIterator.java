@@ -8,9 +8,9 @@ public class FamilyTreeIterator implements Iterator<Human> {
     private int index;
     private List<Human> treeHuman;
 
-    public FamilyTreeIterator (List<Human> treeHuman) {
-            this.treeHuman = treeHuman;
-        }
+    public FamilyTreeIterator(List<Human> treeHuman) {
+        this.treeHuman = treeHuman;
+    }
 
     @Override
     public boolean hasNext() {
