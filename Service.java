@@ -10,11 +10,6 @@ public class Service {
         this.tree = tree;
     }
 
-    // public void addHuman(String name, int age, Human father, Human mather) {
-    // Human human = new Human(name, age, father, mather);
-    // tree.addHuman(human);
-    // }
-
     public void sortByName() {
         Collections.sort(tree.getTreeHuman());
     }
