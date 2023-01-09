@@ -82,8 +82,4 @@ public class Human implements Comparable<Human> {
     public void setMather(Human mather) {
         this.mather = mather;
     }
-
-    // public ArrayList<Communications> getFamily() {
-    // return family;
-    // }
 }
