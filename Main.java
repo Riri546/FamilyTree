@@ -2,7 +2,7 @@ package FamilyTree;
 
 public class Main {
     public static void main(String[] args) {
-        FamilyTree tree = new FamilyTree();
+        FamilyTree<Human> tree = new FamilyTree<>();
         Service service = new Service(tree);
 
         Human h1 = new Human("Мария", 54);

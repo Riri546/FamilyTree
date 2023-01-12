@@ -11,7 +11,7 @@ public class FamilyTree<T extends Human> implements Iterable<T> {
         treeHuman = new ArrayList<>();
     }
 
-    public void addHuman(Human human) {
+    public void addHuman(T human) {
         treeHuman.add(human);
     }
 
