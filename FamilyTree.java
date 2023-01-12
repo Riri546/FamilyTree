@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class FamilyTree implements Iterable<Human> {
-    private ArrayList<Human> treeHuman;
+public class FamilyTree<T extends Human> implements Iterable<T> {
+    private ArrayList<T> treeHuman;
 
-    public FamilyTree() {
+    public FamilyTree() { 
         treeHuman = new ArrayList<>();
     }
 
@@ -16,11 +16,11 @@ public class FamilyTree implements Iterable<Human> {
     }
 
     @Override
-    public Iterator<Human> iterator() {
+    public Iterator<T> iterator() {
         return new FamilyTreeIterator(treeHuman);
     }
 
-    public List<Human> getTreeHuman() {
+    public List<T> getTreeHuman() {
         return treeHuman;
     }
 }
