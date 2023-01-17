@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         FamilyTree<Human> tree = new FamilyTree<>();
         View view = new View();
-        
 
         Human h1 = new Human("Мария", 54);
         tree.addHuman(h1);
@@ -18,6 +17,8 @@ public class Main {
         // плюсом они же как бабушка с дедушкой
         Human h5 = new Human("София", 10, h3, h4, h2, h1);
         tree.addHuman(h5);
+
+        view.communicationUse();
 
         
 
