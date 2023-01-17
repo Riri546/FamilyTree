@@ -55,9 +55,6 @@ public class View {
             for (Human human : tree) {
                 System.out.println(human);
             }
-
         }
-
     }
-
 }
