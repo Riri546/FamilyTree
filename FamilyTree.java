@@ -6,12 +6,16 @@ import java.util.List;
 
 public class FamilyTree<T extends Human> implements Iterable<T> {
     private ArrayList<T> treeHuman;
-    private List<Human> children;
+    private ArrayList<T> children;
 
     public FamilyTree() { 
         treeHuman = new ArrayList<>();
         children = new ArrayList<>();
     }
+
+    // public void childrenList(ArrayList<T> children){
+    //     children;
+    // }
 
     public void addHuman(T human) {
         treeHuman.add(human);
@@ -28,5 +32,9 @@ public class FamilyTree<T extends Human> implements Iterable<T> {
 
     public List<T> getTreeHuman() {
         return treeHuman;
+    }
+
+    public ArrayList<T> getChildren() {
+        return children;
     }
 }

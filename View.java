@@ -6,7 +6,6 @@ public class View {
     FamilyTree<Human> tree = new FamilyTree<>();
     Service service = new Service(tree);
     Scanner scanner = new Scanner(System.in);
-    
 
     public void communicationUse() {
         Human h1 = new Human("Мария", 54);
@@ -27,7 +26,8 @@ public class View {
                 "В каком порядке хотите просмотреть список людей?" + "\n" +
                         "1 - Вывести полный список людей из семейного древа" + "\n" +
                         "2 - Отсортировать полный список по имени в алфавитном порядке" + "\n" +
-                        "3 - Отсортировать по возросту в порядке возрастания");
+                        "3 - Отсортировать по возросту в порядке возрастания" + "\n" +
+                        "4 - Показать список детей");
 
         System.out.println();
         System.out.print("Введите цифру для выполнения действия: ");
@@ -40,6 +40,7 @@ public class View {
             for (Human human : tree) {
                 System.out.println(human);
             }
+
         }
 
         if (numberUser == 2) {
@@ -58,6 +59,14 @@ public class View {
             for (Human human : tree) {
                 System.out.println(human);
             }
+        }
+        if (numberUser == 4) {
+            System.out.println("Представляю вашему вниманию список детей: ");
+            System.out.print(tree.getChildren());
+
+            // for (Human human : tree) {
+            //     System.out.println(human);
+            // }
         }
     }
 }

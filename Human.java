@@ -12,11 +12,6 @@ public class Human implements Comparable<Human> {
     private Human grandfather;
     private Human grandmather;
     FamilyTree<Human> tree = new FamilyTree<>();
-    // private List<Human> children;
-
-    // public Human(){
-    // children = new ArrayList<>();
-    // }
 
     public Human(String name, int age) {
         this.name = name;
@@ -48,14 +43,17 @@ public class Human implements Comparable<Human> {
 
     @Override
     public String toString() {
+        // return (" " + name + " " + age);
         if (father == null & mather == null) {
-            return " " + name + " " + age;
+        return " " + name + " " + age;
         }
         if (grandfather == null & grandmather == null) {
-            return " " + name + " " + age + " Отец: " + father + " Мать: " + mather;
-        } else {
-            return " " + name + " " + age + " Отец: " + this.father + " Мать: " + this.mather +
-                    " Дедушка: " + grandfather + " Бабушка: " + grandmather;
+        return " " + name + " " + age + " Отец: " + father + " Мать: " + mather;
+        } 
+        else {
+        return " " + name + " " + age + " Отец: " + this.father + " Мать: " +
+        this.mather +
+        " Дедушка: " + grandfather + " Бабушка: " + grandmather;
         }
     }
 
