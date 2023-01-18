@@ -4,7 +4,7 @@ package FamilyTree;
 // import java.util.List;
 
 public class Human implements Comparable<Human> {
-
+    private int index;
     private String name;
     private int age;
     private Human father;
@@ -13,12 +13,14 @@ public class Human implements Comparable<Human> {
     private Human grandmather;
     FamilyTree<Human> tree = new FamilyTree<>();
 
-    public Human(String name, int age) {
+    public Human(int index, String name, int age) {
+        this.index = index + 1;
         this.name = name;
         this.age = age;
     }
 
-    public Human(String name, int age, Human father, Human mather) {
+    public Human(int index, String name, int age, Human father, Human mather) {
+        this.index = index + 1;
         this.name = name;
         this.age = age;
         this.father = father;
@@ -32,7 +34,8 @@ public class Human implements Comparable<Human> {
         }
     }
 
-    public Human(String name, int age, Human father, Human mather, Human grandfather, Human grandmather) {
+    public Human(int index, String name, int age, Human father, Human mather, Human grandfather, Human grandmather) {
+        this.index = index + 1;
         this.name = name;
         this.age = age;
         this.father = father;
@@ -44,21 +47,29 @@ public class Human implements Comparable<Human> {
     @Override
     public String toString() {
         if (father == null & mather == null) {
-        return this.name + " " + this.age;
+            return this.index + " " + this.name + " " + this.age;
         }
         if (grandfather == null & grandmather == null) {
-        return this.name + " " + this.age + " Отец: " + this.father.name + " Мать: " + this.mather.name;
-        } 
-        else {
-        return this.name + " " + this.age + " Отец: " + this.father.name + " Мать: " +
-        this.mather.name +
-        " Дедушка: " + this.grandfather.name + " Бабушка: " + this.grandmather.name;
+            return this.index + " " + this.name + " " + this.age + " Отец: " + this.father.name + " Мать: "
+                    + this.mather.name;
+        } else {
+            return this.index + " " + this.name + " " + this.age + " Отец: " + this.father.name + " Мать: " +
+                    this.mather.name +
+                    " Дедушка: " + this.grandfather.name + " Бабушка: " + this.grandmather.name;
         }
     }
 
     @Override
     public int compareTo(Human o) {
         return name.compareTo(o.getName());
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
     }
 
     public String getName() {
@@ -76,14 +87,6 @@ public class Human implements Comparable<Human> {
     public void setAge(int age) {
         this.age = age;
     }
-
-    // public List<Human> getChildren() {
-    // return children;
-    // }
-
-    // public void setChildren(List<Human> children) {
-    // this.children = children;
-    // }
 
     public Human getFather() {
         return father;
