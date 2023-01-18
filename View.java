@@ -81,7 +81,7 @@ public class View {
             }
         }
 
-        else {
+        if(numberUser > 4) {
             System.out.println("Похоже, вы что-то ввели неверно");
         }
 
