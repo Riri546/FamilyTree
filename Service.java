@@ -2,11 +2,11 @@ package FamilyTree;
 
 import java.util.Collections;
 
-public class Service<T extends Human> {
+public class Service {
 
-    private FamilyTree<T> tree;
+    private FamilyTree<Human> tree;
 
-    public Service(FamilyTree<T> tree) {
+    public Service(FamilyTree<Human> tree) {
         this.tree = tree;
     }
 
@@ -15,6 +15,6 @@ public class Service<T extends Human> {
     }
 
     public void sortByAge() {
-    Collections.sort(tree.getTreeHuman(), new HumanComparatorByAge<T>());
+        Collections.sort(tree.getTreeHuman(), new HumanComparatorByAge<Human>());
     }
 }
