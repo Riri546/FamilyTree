@@ -32,7 +32,7 @@ public class View {
         System.out.print("Введите цифру для выполнения действия: ");
         int numberUser = scanner.nextInt();
         System.out.println();
-
+        
         if (numberUser == 1) {
             System.out.println("Пожалуйста! Как вы и просили список людей из семейного древа: ");
 
@@ -40,6 +40,7 @@ public class View {
                 System.out.println(human);
             }
         }
+
         if (numberUser == 2) {
             System.out.println("Это древо отсортировано в алфавитном порядке по имени: ");
             service.sortByName();
@@ -48,6 +49,7 @@ public class View {
                 System.out.println(human);
             }
         }
+
         if (numberUser == 3) {
             System.out.println("Это древо представленно в виде отсортированного по возрасту: ");
             service.sortByAge();
