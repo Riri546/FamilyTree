@@ -10,7 +10,7 @@ public class Human implements Comparable<Human> {
     private Human mather;
     private Human grandfather;
     private Human grandmather;
-    private List<Human> children;
+    // private List<Human> children;
 
     public Human(String name, int age) {
         this.name = name;
@@ -81,13 +81,13 @@ public class Human implements Comparable<Human> {
         this.age = age;
     }
 
-    public List<Human> getChildren() {
-        return children;
-    }
+    // public List<Human> getChildren() {
+    //     return children;
+    // }
 
-    public void setChildren(List<Human> children) {
-        this.children = children;
-    }
+    // public void setChildren(List<Human> children) {
+    //     this.children = children;
+    // }
 
     public Human getFather() {
         return father;
