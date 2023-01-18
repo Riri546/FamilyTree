@@ -51,9 +51,9 @@ public class Human implements Comparable<Human> {
         return " " + name + " " + age + " Отец: " + father + " Мать: " + mather;
         } 
         else {
-        return " " + name + " " + age + " Отец: " + this.father + " Мать: " +
-        this.mather +
-        " Дедушка: " + grandfather + " Бабушка: " + grandmather;
+        return " " + this.name + " " + this.age + " Отец: " + this.father.name + " Мать: " +
+        this.mather.name +
+        " Дедушка: " + this.grandfather.name + " Бабушка: " + this.grandmather.name;
         }
     }
 

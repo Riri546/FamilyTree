@@ -27,8 +27,7 @@ public class View {
                 "Введите нужную цифру для просмотра: " + "\n" +
                         "1 - Вывести полный список людей из семейного древа" + "\n" +
                         "2 - Отсортировать полный список по имени в алфавитном порядке" + "\n" +
-                        "3 - Отсортировать по возросту в порядке возрастания" + "\n" +
-                        "4 - Показать список детей");
+                        "3 - Отсортировать по возросту в порядке возрастания");
 
         System.out.println();
         System.out.print("Введите цифру для выполнения действия: ");
@@ -59,14 +58,6 @@ public class View {
             for (Human human : tree) {
                 System.out.println(human);
             }
-        }
-        if (numberUser == 4) {
-            System.out.println("Представляю вашему вниманию список детей: ");
-            System.out.print(tree.getChildren());
-
-            // for (Human human : tree) {
-            //     System.out.println(human);
-            // }
         }
     }
 }
