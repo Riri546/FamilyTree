@@ -43,15 +43,14 @@ public class Human implements Comparable<Human> {
 
     @Override
     public String toString() {
-        // return (" " + name + " " + age);
         if (father == null & mather == null) {
-        return " " + this.name + " " + this.age;
+        return this.name + " " + this.age;
         }
         if (grandfather == null & grandmather == null) {
-        return " " + this.name + " " + this.age + " Отец: " + this.father.name + " Мать: " + this.mather.name;
+        return this.name + " " + this.age + " Отец: " + this.father.name + " Мать: " + this.mather.name;
         } 
         else {
-        return " " + this.name + " " + this.age + " Отец: " + this.father.name + " Мать: " +
+        return this.name + " " + this.age + " Отец: " + this.father.name + " Мать: " +
         this.mather.name +
         " Дедушка: " + this.grandfather.name + " Бабушка: " + this.grandmather.name;
         }
