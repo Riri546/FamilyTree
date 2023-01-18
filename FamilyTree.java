@@ -27,7 +27,7 @@ public class FamilyTree<T extends Human> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return new FamilyTreeIterator(treeHuman);
+        return new FamilyTreeIterator<T>(treeHuman);
     }
 
     public List<T> getTreeHuman() {
