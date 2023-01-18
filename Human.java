@@ -45,10 +45,10 @@ public class Human implements Comparable<Human> {
     public String toString() {
         // return (" " + name + " " + age);
         if (father == null & mather == null) {
-        return " " + name + " " + age;
+        return " " + this.name + " " + this.age;
         }
         if (grandfather == null & grandmather == null) {
-        return " " + name + " " + age + " Отец: " + father + " Мать: " + mather;
+        return " " + this.name + " " + this.age + " Отец: " + this.father.name + " Мать: " + this.mather.name;
         } 
         else {
         return " " + this.name + " " + this.age + " Отец: " + this.father.name + " Мать: " +
