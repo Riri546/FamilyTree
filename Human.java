@@ -1,6 +1,7 @@
 package FamilyTree;
 
-import java.util.List;
+// import java.util.ArrayList;
+// import java.util.List;
 
 public class Human implements Comparable<Human> {
 
@@ -10,7 +11,12 @@ public class Human implements Comparable<Human> {
     private Human mather;
     private Human grandfather;
     private Human grandmather;
+    FamilyTree<Human> tree = new FamilyTree<>();
     // private List<Human> children;
+
+    // public Human(){
+    // children = new ArrayList<>();
+    // }
 
     public Human(String name, int age) {
         this.name = name;
@@ -23,18 +29,12 @@ public class Human implements Comparable<Human> {
         this.father = father;
         this.mather = mather;
 
-        //Если оставить эту логику, то терминал выдает ошибку при ввыводе. Exception in thread 
-        // "main" java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" 
-        // because "father.children" is null
-        // at FamilyTree.Human.<init>(Human.java:28)
-        // at FamilyTree.Main.main(Main.java:12)
-
-        // if (father != null) {
-        // father.children.add(this);
-        // }
-        // if (mather != null) {
-        // mather.children.add(this);
-        // }
+        if (father != null) {
+            father.tree.addCild(this);
+        }
+        if (mather != null) {
+            mather.tree.addCild(this);
+        }
     }
 
     public Human(String name, int age, Human father, Human mather, Human grandfather, Human grandmather) {
@@ -50,13 +50,12 @@ public class Human implements Comparable<Human> {
     public String toString() {
         if (father == null & mather == null) {
             return " " + name + " " + age;
-        } 
-        if(grandfather == null & grandmather == null){
-            return " " + name + " " + age + " Отец: " + father + " Мать: " + mather;
         }
-        else {
+        if (grandfather == null & grandmather == null) {
+            return " " + name + " " + age + " Отец: " + father + " Мать: " + mather;
+        } else {
             return " " + name + " " + age + " Отец: " + this.father + " Мать: " + this.mather +
-            " Дедушка: " + grandfather + " Бабушка: " + grandmather;
+                    " Дедушка: " + grandfather + " Бабушка: " + grandmather;
         }
     }
 
@@ -82,11 +81,11 @@ public class Human implements Comparable<Human> {
     }
 
     // public List<Human> getChildren() {
-    //     return children;
+    // return children;
     // }
 
     // public void setChildren(List<Human> children) {
-    //     this.children = children;
+    // this.children = children;
     // }
 
     public Human getFather() {
