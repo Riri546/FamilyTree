@@ -1,8 +1,5 @@
 package FamilyTree;
 
-// import java.util.ArrayList;
-// import java.util.List;
-
 public class Human implements Comparable<Human> {
     private int index;
     private String name;

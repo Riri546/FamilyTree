@@ -85,6 +85,6 @@ public class View {
         if(numberUser > 4) {
             System.out.println("Похоже, вы что-то ввели неверно");
         }
-
+        scanner.close();
     }
 }

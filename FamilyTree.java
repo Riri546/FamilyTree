@@ -2,9 +2,10 @@ package FamilyTree;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
+import java.util.Scanner;
 
 public class FamilyTree<T extends Human> implements Iterable<T> {
+    Scanner scan = new Scanner(System.in);
     private ArrayList<T> treeHuman;
     private ArrayList<T> children;
 
@@ -13,12 +14,11 @@ public class FamilyTree<T extends Human> implements Iterable<T> {
         children = new ArrayList<>();
     }
 
-    // public void childrenList(ArrayList<T> children){
-    //     children;
-    // }
-
     public void addHuman(T human) {
         treeHuman.add(human);
+        // while (scan.hasNextLine()) {
+        //     treeHuman.add(scan.nextLine());
+        // }
     }
 
     public void addCild(T child){
@@ -30,7 +30,8 @@ public class FamilyTree<T extends Human> implements Iterable<T> {
         return new FamilyTreeIterator<T>(treeHuman);
     }
 
-    public List<T> getTreeHuman() {
+
+    public ArrayList<T> getTreeHuman() {
         return treeHuman;
     }
 
