@@ -8,6 +8,7 @@ public class View {
     Scanner scanner = new Scanner(System.in);
 
     public void communicationUse() {
+    //Нжно как-то отсюда убрать добавление, перенети в другой файл и сенхронзировать его со вью 
         Human h1 = new Human(1, "Мария", 55);
         tree.addHuman(h1);
         Human h2 = new Human(2, "Валерий", 58);
