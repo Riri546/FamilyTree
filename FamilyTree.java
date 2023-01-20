@@ -14,14 +14,18 @@ public class FamilyTree<T extends Human> implements Iterable<T> {
         treeHuman = new ArrayList<>();
         children = new ArrayList<>();
     }
-
     public void addHuman(T human) {
-        // Human human = new Human();
-        human.setIndex(scan.nextInt());
-        human.setName(scan.nextLine());
-        human.setAge(scan.nextInt());;
         treeHuman.add(human);
     }
+
+    // public void addHuman(T human) {
+    //     // Human human = new Human();
+    //     human.setIndex(scan.nextInt());
+    //     human.setName(scan.nextLine());
+    //     human.setAge(scan.nextInt());;
+    //     treeHuman.add(human);
+    //     scan.close();
+    // }
     
     // public void viewingList(T human, int index){
     //     ((List<T>) human).get(index);
