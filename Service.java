@@ -10,10 +10,12 @@ public class Service {
         this.tree = tree;
     }
 
+    // Метод для сортировки по имени 
     public void sortByName() {
         Collections.sort(tree.getTreeHuman());
     }
 
+    // Метод для сортировки по возрасту 
     public void sortByAge() {
         Collections.sort(tree.getTreeHuman(), new HumanComparatorByAge<Human>());
     }
