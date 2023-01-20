@@ -46,11 +46,12 @@ public class FamilyTree<T extends Human> implements Iterable<T> {
         return new FamilyTreeIterator<T>(treeHuman);
     }
 
-    //Так как листы приватные, то для их чттения нужны get 
+    //Так как лист приватныей, то для их чтения нужн get 
     public ArrayList<T> getTreeHuman() {
         return treeHuman;
     }
 
+    //Так как лист приватныей, то для их чтения нужн get 
     public ArrayList<T> getChildren() {
         return children;
     }
