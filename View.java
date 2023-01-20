@@ -8,8 +8,7 @@ public class View {
     Scanner scanner = new Scanner(System.in);
 
     public void communicationUse() {
-
-        // Нжно как-то отсюда убрать добавление, перенети в другой файл и
+        // Нeжно как-то отсюда убрать добавление, перенети в другой файл и
         // сенхронзировать его со вью
         Human h1 = new Human(1, "Мария", 55);
         tree.addHuman(h1);
@@ -65,6 +64,7 @@ public class View {
         if (numberUser == 4) {
             System.out.print("Введите порядковый номер члена этой семьи: ");
             int indexFamily = scanner.nextInt();
+            
             if (indexFamily == 1) {
                 System.out.println(h1);
             }
