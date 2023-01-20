@@ -8,6 +8,7 @@ public class View {
     Scanner scanner = new Scanner(System.in);
 
     public void communicationUse() {
+        tree.addHuman();
     //Нжно как-то отсюда убрать добавление, перенети в другой файл и сенхронзировать его со вью 
         // Human h1 = new Human(1, "Мария", 55);
         // tree.addHuman(h1);
@@ -61,25 +62,26 @@ public class View {
         }
 
         if (numberUser == 4) {
-            System.out.println("Введите порядковый номер члена этой семьи: ");
-            int indexFamily = scanner.nextInt();
-            if (indexFamily == 1) {
-                System.out.println(h1);
-            }
-            if (indexFamily == 2) {
-                System.out.println(h2);
-            }
-            if (indexFamily == 3) {
-                System.out.println(h3);
-            }
-            if (indexFamily == 4) {
-                System.out.println(h4);
-            }
-            if (indexFamily == 5) {
-                System.out.println(h5);
-            } else {
-                System.out.println("К сожалению в списке нет такого номера");
-            }
+        //     System.out.println("Введите порядковый номер члена этой семьи: ");
+        //     int indexFamily = scanner.nextInt();
+        //     if (indexFamily == 1) {
+                
+        //         System.out.println(р1);
+        //     }
+        //     if (indexFamily == 2) {
+        //         System.out.println(h2);
+        //     }
+        //     if (indexFamily == 3) {
+        //         System.out.println(h3);
+        //     }
+        //     if (indexFamily == 4) {
+        //         System.out.println(h4);
+        //     }
+        //     if (indexFamily == 5) {
+        //         System.out.println(h5);
+        //     } else {
+        //         System.out.println("К сожалению в списке нет такого номера");
+        //     }
         }
 
         if(numberUser > 4) {
