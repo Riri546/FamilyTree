@@ -2,7 +2,7 @@ package FamilyTree;
 
 public class Add {
     FamilyTree<Human> tree = new FamilyTree<Human>();
-    //Это тестовый файл. Пытаюсь понять как убрать добавление людей из view 
+    //Это тестовый файл. Пытаюсь понять как убрать добавление людей из view/
     public void myHuman(){
         Human h1 = new Human(1, "Мария", 55);
         tree.addHuman(h1);
