@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class View {
     FamilyTree<Human> tree = new FamilyTree<>();
     Service service = new Service(tree);
+    Add a = new Add();
     Scanner scanner = new Scanner(System.in);
 
     public void communicationUse() {
@@ -64,7 +65,10 @@ public class View {
         if (numberUser == 4) {
             System.out.print("Введите порядковый номер члена этой семьи: ");
             int indexFamily = scanner.nextInt();
-            
+            //Пробую перенести добавление персов в другой файл 
+            // if (indexFamily == 1) {
+            //     System.out.println(a.myHuman());
+            // }
             if (indexFamily == 1) {
                 System.out.println(h1);
             }
