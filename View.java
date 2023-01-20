@@ -2,10 +2,11 @@ package FamilyTree;
 
 import java.util.Scanner;
 
+// Метод для общения с пользователем 
 public class View {
     FamilyTree<Human> tree = new FamilyTree<>();
     Service service = new Service(tree);
-    Add a = new Add();
+    // Add a = new Add();
     Scanner scanner = new Scanner(System.in);
 
     public void communicationUse() {
@@ -36,6 +37,7 @@ public class View {
         int numberUser = scanner.nextInt();
         System.out.println();
 
+        //Проверяем, какую цифру выбрал пользователь и выдаем нужный ответ 
         if (numberUser == 1) {
             System.out.println("Пожалуйста! Как вы и просили список людей из семейного древа: ");
 
