@@ -63,7 +63,7 @@ public class View {
                 System.out.println(human);
             }
         }
-
+        //  нужно изменить подход
         if (numberUser == 4) {
             System.out.print("Введите порядковый номер члена этой семьи: ");
             int indexFamily = scanner.nextInt();
