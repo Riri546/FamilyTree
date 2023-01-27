@@ -4,8 +4,11 @@ import java.util.Scanner;
 
 // Метод для общения с пользователем 
 public class View {
+    FamilyTree<Human> tree = new FamilyTree<>();
     Controller contr = new Controller();
     Scanner scanner = new Scanner(System.in);
+    int i = 0;
+
 
     public void communicationUse() {
         System.out.println("Здравствуйте! Это генеологическое древо.");
@@ -27,45 +30,48 @@ public class View {
             System.out.println("Пожалуйста! Как вы и просили список людей из семейного древа: ");
             contr.withoutSorting();
         }
-
-        if (numberUser == 2) {
+        else if (numberUser == 2) {
             System.out.println("Это древо отсортировано в алфавитном порядке по имени: ");
             contr.treeByName();
         }
-
-        if (numberUser == 3) {
+        else if (numberUser == 3) {
             System.out.println("Это древо представленно в виде отсортированного по возрасту: ");
             contr.treeByAge();
         }
+        tree.getTreeHuman().size();
         //  нужно изменить подход
-        // if (numberUser == 4) {
-        //     System.out.print("Введите порядковый номер члена этой семьи: ");
-        //     int indexFamily = scanner.nextInt();
-        //     //Пробую перенести добавление персов в другой файл 
-        //     // if (indexFamily == 1) {
-        //     //     System.out.println(a.myHuman());
-        //     // }
-        //     if (indexFamily == 1) {
-        //         System.out.println(contr.m);
-        //     }
-        //     if (indexFamily == 2) {
-        //         System.out.println(h2);
-        //     }
-        //     if (indexFamily == 3) {
-        //         System.out.println(h3);
-        //     }
-        //     if (indexFamily == 4) {
-        //         System.out.println(h4);
-        //     }
-        //     if (indexFamily == 5) {
-        //         System.out.println(h5);
-        //     }
-        //     if (indexFamily >= 6) {
-        //         System.out.println("К сожалению в списке нет такого номера");
-        //     }
-        // }
+        if (numberUser == 4) {
+            System.out.print("Введите порядковый номер члена этой семьи: ");
+            int indexFamily = scanner.nextInt();
+            //Пробую перенести добавление персов в другой файл 
+            for(i = 0; i <= tree.getTreeHuman().size(); i++){
+                System.out.println(tree.getTreeHuman().get(indexFamily));
+            }
+            // if (indexFamily == 1) {
+            //     System.out.println(a.myHuman());
+            // }
 
-        if (numberUser >= 5) {
+            // if (indexFamily == 1) {
+            //     System.out.println(contr.m);
+            // }
+            // else if (indexFamily == 2) {
+            //     System.out.println(h2);
+            // }
+            // else if (indexFamily == 3) {
+            //     System.out.println(h3);
+            // }
+            // else if (indexFamily == 4) {
+            //     System.out.println(h4);
+            // }
+            // else if (indexFamily == 5) {
+            //     System.out.println(h5);
+            // }
+            // else if (indexFamily >= 6) {
+            //     System.out.println("К сожалению в списке нет такого номера");
+            // }
+        }
+
+        else if (numberUser >= 5) {
             System.out.println("Похоже, вы что-то ввели неверно");
         }
         scanner.close();
