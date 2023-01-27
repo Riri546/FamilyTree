@@ -5,23 +5,12 @@ import java.util.Scanner;
 // Метод для общения с пользователем 
 public class View {
     FamilyTree<Human> tree = new FamilyTree<>();
+    Controller contr = new Controller();
     Service service = new Service(tree);
-    // Add a = new Add();
     Scanner scanner = new Scanner(System.in);
 
     public void communicationUse() {
-        // Нeжно как-то отсюда убрать добавление, перенети в другой файл и
-        // сенхронзировать его со вью
-        Human h1 = new Human(1, "Мария", 55);
-        tree.addHuman(h1);
-        Human h2 = new Human(2, "Валерий", 58);
-        tree.addHuman(h2);
-        Human h3 = new Human(3, "Дмитрий", 30, h2, h1);
-        tree.addHuman(h3);
-        Human h4 = new Human(4, "Дарья", 35);
-        tree.addHuman(h4);
-        Human h5 = new Human(5, "София", 10, h3, h4, h2, h1);
-        tree.addHuman(h5);
+        
 
         System.out.println("Здравствуйте! Это генеологическое древо.");
         System.out.println(
@@ -64,32 +53,32 @@ public class View {
             }
         }
         //  нужно изменить подход
-        if (numberUser == 4) {
-            System.out.print("Введите порядковый номер члена этой семьи: ");
-            int indexFamily = scanner.nextInt();
-            //Пробую перенести добавление персов в другой файл 
-            // if (indexFamily == 1) {
-            //     System.out.println(a.myHuman());
-            // }
-            if (indexFamily == 1) {
-                System.out.println(h1);
-            }
-            if (indexFamily == 2) {
-                System.out.println(h2);
-            }
-            if (indexFamily == 3) {
-                System.out.println(h3);
-            }
-            if (indexFamily == 4) {
-                System.out.println(h4);
-            }
-            if (indexFamily == 5) {
-                System.out.println(h5);
-            }
-            if (indexFamily >= 6) {
-                System.out.println("К сожалению в списке нет такого номера");
-            }
-        }
+        // if (numberUser == 4) {
+        //     System.out.print("Введите порядковый номер члена этой семьи: ");
+        //     int indexFamily = scanner.nextInt();
+        //     //Пробую перенести добавление персов в другой файл 
+        //     // if (indexFamily == 1) {
+        //     //     System.out.println(a.myHuman());
+        //     // }
+        //     if (indexFamily == 1) {
+        //         System.out.println(contr.m);
+        //     }
+        //     if (indexFamily == 2) {
+        //         System.out.println(h2);
+        //     }
+        //     if (indexFamily == 3) {
+        //         System.out.println(h3);
+        //     }
+        //     if (indexFamily == 4) {
+        //         System.out.println(h4);
+        //     }
+        //     if (indexFamily == 5) {
+        //         System.out.println(h5);
+        //     }
+        //     if (indexFamily >= 6) {
+        //         System.out.println("К сожалению в списке нет такого номера");
+        //     }
+        // }
 
         if (numberUser >= 5) {
             System.out.println("Похоже, вы что-то ввели неверно");
