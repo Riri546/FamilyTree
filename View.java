@@ -46,9 +46,10 @@ public class View {
                 System.out.println(tree.getTreeHuman().get(indexFamily - 1));
                 break;
             }
-            if (i > tree.getTreeHuman().size()) {
+            for(i = 0; i > tree.getTreeHuman().size();){
                 System.out.println("К сожалению в списке нет такого номера");
             }
+            
 
             // if (indexFamily == 1) {
             // System.out.println(a.myHuman());
