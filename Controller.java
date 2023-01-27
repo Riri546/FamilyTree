@@ -31,4 +31,12 @@ public class Controller {
             System.out.println(human);
         }
     }
+
+    public void treeByAge() {
+        service.sortByAge();
+
+        for (Human human : tree) {
+            System.out.println(human);
+        }
+    }
 }

@@ -34,16 +34,12 @@ public class View {
 
         if (numberUser == 2) {
             System.out.println("Это древо отсортировано в алфавитном порядке по имени: ");
-            
+            contr.treeByName();
         }
 
         if (numberUser == 3) {
             System.out.println("Это древо представленно в виде отсортированного по возрасту: ");
-            service.sortByAge();
-
-            for (Human human : tree) {
-                System.out.println(human);
-            }
+            contr.treeByAge();
         }
         //  нужно изменить подход
         // if (numberUser == 4) {
