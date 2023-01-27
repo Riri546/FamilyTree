@@ -45,6 +45,7 @@ public class View {
             int indexFamily = scanner.nextInt();
             //Пробую перенести добавление персов в другой файл 
             for(i = 0; i <= tree.getTreeHuman().size(); i++){
+                tree.myHuman(null);
                 System.out.println(tree.getTreeHuman().get(indexFamily));
             }
             // if (indexFamily == 1) {
