@@ -4,14 +4,10 @@ import java.util.Scanner;
 
 // Метод для общения с пользователем 
 public class View {
-    FamilyTree<Human> tree = new FamilyTree<>();
     Controller contr = new Controller();
-    
     Scanner scanner = new Scanner(System.in);
 
     public void communicationUse() {
-        
-
         System.out.println("Здравствуйте! Это генеологическое древо.");
         System.out.println(
                 "В каком порядке хотите просмотреть список людей?" + "\n" +
