@@ -29,10 +29,7 @@ public class View {
         //Проверяем, какую цифру выбрал пользователь и выдаем нужный ответ 
         if (numberUser == 1) {
             System.out.println("Пожалуйста! Как вы и просили список людей из семейного древа: ");
-
-            for (Human human : tree) {
-                System.out.println(human);
-            }
+            contr.withoutSorting();
         }
 
         if (numberUser == 2) {

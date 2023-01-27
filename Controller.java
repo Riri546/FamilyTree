@@ -16,4 +16,9 @@ public class Controller {
         Human h5 = new Human(5, "София", 10, h3, h4, h2, h1);
         tree.addHuman(h5);
     }
+    public void withoutSorting(){
+        for (Human human : tree) {
+            System.out.println(human);
+        }
+    }
 }
