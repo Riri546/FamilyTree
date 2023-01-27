@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class View {
     FamilyTree<Human> tree = new FamilyTree<>();
     Controller contr = new Controller();
-    Service service = new Service(tree);
+    
     Scanner scanner = new Scanner(System.in);
 
     public void communicationUse() {
@@ -34,11 +34,7 @@ public class View {
 
         if (numberUser == 2) {
             System.out.println("Это древо отсортировано в алфавитном порядке по имени: ");
-            service.sortByName();
-
-            for (Human human : tree) {
-                System.out.println(human);
-            }
+            
         }
 
         if (numberUser == 3) {
