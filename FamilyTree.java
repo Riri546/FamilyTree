@@ -2,15 +2,12 @@ package FamilyTree;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Scanner;
 
 public class FamilyTree<T extends Human> implements Iterable<T> {
-    Scanner scan = new Scanner(System.in);
     
     private ArrayList<T> treeHuman;
     private ArrayList<T> children;
     
-
     // Здесь я создаю два листа в которые вношу полный список людей и еще один
     // список чисто с детьми
     public FamilyTree() {
