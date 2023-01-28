@@ -35,46 +35,24 @@ public class View {
             System.out.println("Это древо представленно в виде отсортированного по возрасту: ");
             contr.treeByAge();
         }
-        tree.getTreeHuman().size();
-        // нужно изменить подход
         if (numberUser == 4) {
             System.out.print("Введите порядковый номер члена этой семьи: ");
             int indexFamily = scanner.nextInt();
+            tree.myHuman(null);
             // Пробую перенести добавление персов в другой файл
             for (i = 0; i <= tree.getTreeHuman().size();) {
-                tree.myHuman(null);
-                System.out.println(tree.getTreeHuman().get(indexFamily - 1));
+                if(i > tree.getTreeHuman().size()){
+                    System.out.println("К сожалению в списке нет такого номера");
+                }
+                else{
+                    System.out.println(tree.getTreeHuman().get(indexFamily - 1));
+                }
                 break;
             }
-            for(i = 0; i > tree.getTreeHuman().size();){
-                System.out.println("К сожалению в списке нет такого номера");
-            }
-            
-
-            // if (indexFamily == 1) {
-            // System.out.println(a.myHuman());
-            // }
-
-            // if (indexFamily == 1) {
-            // System.out.println(contr.m);
-            // }
-            // else if (indexFamily == 2) {
-            // System.out.println(h2);
-            // }
-            // else if (indexFamily == 3) {
-            // System.out.println(h3);
-            // }
-            // else if (indexFamily == 4) {
-            // System.out.println(h4);
-            // }
-            // else if (indexFamily == 5) {
-            // System.out.println(h5);
-            // }
-            // else if (indexFamily >= 6) {
-            // System.out.println("К сожалению в списке нет такого номера");
+            // for(i = 0; i > tree.getTreeHuman().size();){
+            //     System.out.println("К сожалению в списке нет такого номера");
             // }
         }
-
         else if (numberUser >= 5) {
             System.out.println("Похоже, вы что-то ввели неверно");
         }
