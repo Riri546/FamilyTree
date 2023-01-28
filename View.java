@@ -39,7 +39,6 @@ public class View {
             System.out.print("Введите порядковый номер члена этой семьи: ");
             int indexFamily = scanner.nextInt();
             tree.myHuman(null);
-            // Пробую перенести добавление персов в другой файл
             for (i = 0; i <= tree.getTreeHuman().size();) {
                 if(i > tree.getTreeHuman().size()){
                     System.out.println("К сожалению в списке нет такого номера");
@@ -49,9 +48,6 @@ public class View {
                 }
                 break;
             }
-            // for(i = 0; i > tree.getTreeHuman().size();){
-            //     System.out.println("К сожалению в списке нет такого номера");
-            // }
         }
         else if (numberUser >= 5) {
             System.out.println("Похоже, вы что-то ввели неверно");
