@@ -2,8 +2,10 @@ package FamilyTree;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Scanner;
 
 public class FamilyTree<T extends Human> implements Iterable<T> {
+    Scanner scan = new Scanner(System.in);
     
     private ArrayList<T> treeHuman;
     private ArrayList<T> children;
@@ -16,14 +18,18 @@ public class FamilyTree<T extends Human> implements Iterable<T> {
         children = new ArrayList<>();
     }
     
-    //Данный метод занимаетя сохранением людей в основной лист 
+    //Пока этот метод не нужен, но так как я хочу попробовать добавлять людей с консоли, то он может пригодиться 
     // public void addHuman(T human) {
     //     treeHuman.add(human);
     // }
+
+    //Данный метод занимаетя сохранением людей в основной лист 
     public ArrayList<T> addHuman(T human){
         treeHuman.add(human);
         return treeHuman;
     }
+
+    //Метод, который сохраняет первоначальный список
     public ArrayList<T> myHuman(T human) {
         Human h1 = new Human(1, "Мария", 55);
         treeHuman.add((T) h1);
@@ -38,19 +44,15 @@ public class FamilyTree<T extends Human> implements Iterable<T> {
         return treeHuman;
     }
 
-
-    // public void addHuman1(T human) {
-    // // Human human = new Human();
+    //Пока это только идея для ввода новых людей 
+    // public ArrayList<T> addNewHuman(T human) {
+    //     // Human human = new Human();
     //     human.setIndex(scan.nextInt());
     //     human.setName(scan.nextLine());
     //     human.setAge(scan.nextInt());;
     //     treeHuman.add(human);
     //     scan.close();
     //     return treeHuman;
-    // }
-
-    // public void viewingList(T human, int index){
-    // ((List<T>) human).get(index);
     // }
 
     //Этот метод занимается сохранением детей в лист с детьми 
