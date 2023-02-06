@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // Метод для общения с пользователем 
 public class View {
-    FamilyTree<Human> tree = new FamilyTree<>();
+    // FamilyTree<Human> tree = new FamilyTree<>();
     Controller contr = new Controller();
     Scanner scanner = new Scanner(System.in);
     int i = 0;
@@ -38,16 +38,16 @@ public class View {
         if (numberUser == 4) {
             System.out.print("Введите порядковый номер члена этой семьи: ");
             int indexFamily = scanner.nextInt();
-            tree.myHuman(null);
-            for (i = 0; i <= tree.getTreeHuman().size();) {
-                if(i > tree.getTreeHuman().size()){
-                    System.out.println("К сожалению в списке нет такого номера");
-                }
-                else{
-                    System.out.println(tree.getTreeHuman().get(indexFamily - 1));
-                }
-                break;
-            }
+            // tree.myHuman(null);
+            // for (i = 0; i <= tree.getTreeHuman().size();) {
+            //     if(i > tree.getTreeHuman().size()){
+            //         System.out.println("К сожалению в списке нет такого номера");
+            //     }
+            //     else{
+            //         System.out.println(tree.getTreeHuman().get(indexFamily - 1));
+            //     }
+            //     break;
+            // }
         }
         else if (numberUser >= 5) {
             System.out.println("Похоже, вы что-то ввели неверно");
