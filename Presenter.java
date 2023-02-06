@@ -3,7 +3,6 @@ package FamilyTree;
 public class Presenter {
     FamilyTree<Human> tree = new FamilyTree<>();
     Service service = new Service(tree);
-    
 
     public void treeByName() {
         tree.myHuman(null);

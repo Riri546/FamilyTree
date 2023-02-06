@@ -46,7 +46,7 @@ public class Human implements Comparable<Human> {
         this.grandmather = grandmather;
     }
 
-    //Это метод для вывода древа пользователю 
+    // Это метод для вывода древа пользователю
     @Override
     public String toString() {
         if (father == null & mather == null) {
@@ -70,7 +70,7 @@ public class Human implements Comparable<Human> {
         return name.compareTo(o.getName());
     }
 
-    // Так как переменные приватные, то здесь их get и set 
+    // Так как переменные приватные, то здесь их get и set
     public int getIndex() {
         return index;
     }
