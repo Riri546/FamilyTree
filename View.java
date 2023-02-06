@@ -5,6 +5,7 @@ import java.util.Scanner;
 // Метод для общения с пользователем 
 public class View {
     Controller contr = new Controller();
+    Presenter pres = new Presenter();
     Scanner scanner = new Scanner(System.in);
     int i = 0;
 
@@ -29,10 +30,10 @@ public class View {
             contr.withoutSorting();
         } else if (numberUser == 2) {
             System.out.println("Это древо отсортировано в алфавитном порядке по имени: ");
-            contr.treeByName();
+            pres.treeByName();
         } else if (numberUser == 3) {
             System.out.println("Это древо представленно в виде отсортированного по возрасту: ");
-            contr.treeByAge();
+            pres.treeByAge();
         }
         if (numberUser == 4) {
             System.out.print("Введите порядковый номер члена этой семьи: ");
