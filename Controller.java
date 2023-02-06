@@ -2,7 +2,7 @@ package FamilyTree;
 
 public class Controller {
     FamilyTree<Human> tree = new FamilyTree<>();
-    Service service = new Service(tree);
+    // Service service = new Service(tree);
     
     public void withoutSorting() {
         tree.myHuman(null);
@@ -28,6 +28,7 @@ public class Controller {
             System.out.println(human);
         }
     }
+
     public void searchPerson(int idFamily){
         tree.myHuman(null);
             for (int i = 0; i <= tree.getTreeHuman().size();) {
