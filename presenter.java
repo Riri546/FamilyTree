@@ -1,5 +1,5 @@
 package FamilyTree;
 
-public class presenter {
+public class Presenter {
     
 }
