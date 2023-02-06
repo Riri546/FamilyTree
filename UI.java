@@ -2,7 +2,7 @@ package FamilyTree;
 
 import java.util.Scanner;
 
-public class UI {
+public class UI implements View{
     Controller contr = new Controller();
     Presenter pres = new Presenter();
     Scanner scanner = new Scanner(System.in);
