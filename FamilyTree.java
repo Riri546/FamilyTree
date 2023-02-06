@@ -4,29 +4,30 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class FamilyTree<T extends Human> implements Iterable<T> {
-    
+
     private ArrayList<T> treeHuman;
     private ArrayList<T> children;
-    
+
     // Здесь я создаю два листа в которые вношу полный список людей и еще один
     // список чисто с детьми
     public FamilyTree() {
         treeHuman = new ArrayList<>();
         children = new ArrayList<>();
     }
-    
-    //Пока этот метод не нужен, но так как я хочу попробовать добавлять людей с консоли, то он может пригодиться 
+
+    // Пока этот метод не нужен, но так как я хочу попробовать добавлять людей с
+    // консоли, то он может пригодиться
     // public void addHuman(T human) {
-    //     treeHuman.add(human);
+    // treeHuman.add(human);
     // }
 
-    //Данный метод занимаетя сохранением людей в основной лист 
-    public ArrayList<T> addHuman(T human){
+    // Данный метод занимаетя сохранением людей в основной лист
+    public ArrayList<T> addHuman(T human) {
         treeHuman.add(human);
         return treeHuman;
     }
 
-    //Метод, который сохраняет первоначальный список
+    // Метод, который сохраняет первоначальный список
     public ArrayList<T> myHuman(T human) {
         Human h1 = new Human(1, "Мария", 55);
         treeHuman.add((T) h1);
@@ -41,18 +42,18 @@ public class FamilyTree<T extends Human> implements Iterable<T> {
         return treeHuman;
     }
 
-    //Пока это только идея для ввода новых людей 
+    // Пока это только идея для ввода новых людей
     // public ArrayList<T> addNewHuman(T human) {
-    //     // Human human = new Human();
-    //     human.setIndex(scan.nextInt());
-    //     human.setName(scan.nextLine());
-    //     human.setAge(scan.nextInt());;
-    //     treeHuman.add(human);
-    //     scan.close();
-    //     return treeHuman;
+    // // Human human = new Human();
+    // human.setIndex(scan.nextInt());
+    // human.setName(scan.nextLine());
+    // human.setAge(scan.nextInt());;
+    // treeHuman.add(human);
+    // scan.close();
+    // return treeHuman;
     // }
 
-    //Этот метод занимается сохранением детей в лист с детьми 
+    // Этот метод занимается сохранением детей в лист с детьми
     public void addCild(T child) {
         children.add(child);
     }
@@ -62,12 +63,12 @@ public class FamilyTree<T extends Human> implements Iterable<T> {
         return new FamilyTreeIterator<T>(treeHuman);
     }
 
-    //Так как лист приватныей, то для их чтения нужн get 
+    // Так как лист приватныей, то для их чтения нужн get
     public ArrayList<T> getTreeHuman() {
         return treeHuman;
     }
 
-    //Так как лист приватныей, то для их чтения нужн get 
+    // Так как лист приватныей, то для их чтения нужн get
     public ArrayList<T> getChildren() {
         return children;
     }
