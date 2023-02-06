@@ -6,9 +6,8 @@ public class UI {
     Controller contr = new Controller();
     Presenter pres = new Presenter();
     Scanner scanner = new Scanner(System.in);
-    int i = 0;
 
-    public void communicationUse() {
+    public void start() {
         System.out.println("Здравствуйте! Это генеологическое древо.");
         System.out.println(
                 "В каком порядке хотите просмотреть список людей?" + "\n" +
@@ -20,6 +19,9 @@ public class UI {
 
         System.out.println();
         System.out.print("Введите цифру для выполнения действия: ");
+    }
+
+    public void communicationUse() {
         int numberUser = scanner.nextInt();
         System.out.println();
 
@@ -38,8 +40,7 @@ public class UI {
             System.out.print("Введите порядковый номер члена этой семьи: ");
             int indexFamily = scanner.nextInt();
             contr.searchPerson(indexFamily);
-        }
-        else if (numberUser >= 5) {
+        } else if (numberUser >= 5) {
             System.out.println("Похоже, вы что-то ввели неверно");
         }
         scanner.close();
