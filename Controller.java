@@ -11,23 +11,23 @@ public class Controller {
         }
     }
 
-    public void treeByName() {
-        tree.myHuman(null);
-        service.sortByName();
+    // public void treeByName() {
+    //     tree.myHuman(null);
+    //     service.sortByName();
 
-        for (Human human : tree) {
-            System.out.println(human);
-        }
-    }
+    //     for (Human human : tree) {
+    //         System.out.println(human);
+    //     }
+    // }
 
-    public void treeByAge() {
-        tree.myHuman(null);
-        service.sortByAge();
+    // public void treeByAge() {
+    //     tree.myHuman(null);
+    //     service.sortByAge();
 
-        for (Human human : tree) {
-            System.out.println(human);
-        }
-    }
+    //     for (Human human : tree) {
+    //         System.out.println(human);
+    //     }
+    // }
 
     public void searchPerson(int idFamily){
         tree.myHuman(null);
