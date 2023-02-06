@@ -1,6 +1,6 @@
 package FamilyTree;
 
-public class h {
+public class Presenter {
     FamilyTree<Human> tree = new FamilyTree<>();
     Service service = new Service(tree);
     
