@@ -67,6 +67,10 @@ public class FamilyTree<T extends Human> implements Iterable<T> {
     public ArrayList<T> getTreeHuman() {
         return treeHuman;
     }
+    
+    public void setTreeHuman(ArrayList<T> treeHuman) {
+        this.treeHuman = treeHuman;
+    }
 
     // Так как лист приватныей, то для их чтения нужн get
     public ArrayList<T> getChildren() {
