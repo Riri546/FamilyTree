@@ -9,8 +9,8 @@ public class Controller {
             System.out.println(human);
         }
     }
-    
-    //
+
+    //Поиск человека из списка 
     public void searchPerson(int idFamily) {
         tree.myHuman(null);
         for (int i = 0; i <= tree.getTreeHuman().size();) {
