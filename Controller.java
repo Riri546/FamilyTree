@@ -9,7 +9,8 @@ public class Controller {
             System.out.println(human);
         }
     }
-
+    
+    //
     public void searchPerson(int idFamily) {
         tree.myHuman(null);
         for (int i = 0; i <= tree.getTreeHuman().size();) {
