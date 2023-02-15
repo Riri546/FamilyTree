@@ -2,7 +2,7 @@ package FamilyTree;
 
 public class Controller {
     FamilyTree<Human> tree = new FamilyTree<>();
-
+    //Вывод в консоль списка из дерева
     public void withoutSorting() {
         tree.myHuman(null);
         for (Human human : tree) {
